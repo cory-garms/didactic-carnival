@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from './types';
 
-axios.defaults.baseURL = 'https://rocky-retreat-99590-4ff6b8fa9131.herokuapp.com:38422';
+axios.defaults.baseURL = 'https://rocky-retreat-99590-4ff6b8fa9131.herokuapp.com';
 
 export const getItems = () => dispatch => {
     dispatch(setItemsLoading());

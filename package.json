@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Shopping list built with MERN stack",
   "engines": {
-    "node":"16.13.1"
+    "node": "16.13.1"
   },
   "main": "server.js",
   "scripts": {
@@ -24,7 +24,6 @@
     "mongoose": "^7.4.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "nodemon": "^3.0.1"
   }
 }
