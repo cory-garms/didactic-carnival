@@ -4,7 +4,7 @@
   "description": "Shopping list built with MERN stack",
   "engines": {
     "node":"16.13.1"
-  }
+  },
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
