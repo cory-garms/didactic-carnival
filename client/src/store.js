@@ -8,9 +8,10 @@ const initialState = {};
 const middleware = [thunk];
 
 if(process.env.NODE_ENV === 'production') {
-    store = legacy_createStore(rootReducer, initialState, compose(
+    var store = legacy_createStore(rootReducer, initialState, compose(
         applyMiddleware(...middleware)
     ));
+   
 } else {
     store = legacy_createStore(rootReducer, initialState, compose(
         applyMiddleware(...middleware),
