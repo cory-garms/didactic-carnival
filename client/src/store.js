@@ -7,12 +7,16 @@ const initialState = {};
 
 const middleware = [thunk];
 
-const store = legacy_createStore(
-    rootReducer, 
-    initialState, 
-    compose(
+if(process.env.NODE_ENV === 'production') {
+    store = legacy_createStore(rootReducer, initialState, compose(
+        applyMiddleware(...middleware)
+    ));
+} else {
+    store = legacy_createStore(rootReducer, initialState, compose(
         applyMiddleware(...middleware),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-));
+    ));
+}
 
 export default store;
+
