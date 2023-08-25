@@ -2,6 +2,9 @@
   "name": "shopping_list_2.0",
   "version": "2.0.0",
   "description": "Shopping list built with MERN stack",
+  "engines": {
+    "node":"16.13.1"
+  }
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
